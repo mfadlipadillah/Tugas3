@@ -1,4 +1,3 @@
-$("#myArea").fadeIn(1000);
 $("#flip1").click(function(){
 	$("#myTable").slideToggle();
 });
