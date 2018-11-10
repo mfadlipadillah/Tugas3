@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="css/bootstrap.css" />
 <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
 <div class="container-fluid">
@@ -36,25 +37,32 @@
 <br/>
 <div class="alert alert-primary" role="alert" id="flip2"><h1>Form</h1></div>
 <div class="container" id="myForm">
-<form>
+<form id="Form1" action="proses.php" method="POST">
   <div class="form-group">
     <label for="Input1">NPM</label>
-    <input type="text" class="form-control" id="Input1" placeholder="Masukkan NPM">
+    <input type="text" class="form-control" id="Input1" name="npm" placeholder="NPM" required>
   </div>
   <div class="form-group">
     <label for="Input2">Nama</label>
-    <input type="text" class="form-control" id="Input2" placeholder="Masukkan Nama">
+    <input type="text" class="form-control" id="Input2" name="nama" placeholder="Nama" required>
   </div>
   <div class="form-group">
     <label for="Input3">Tgl Lahir</label>
-    <input type="text" class="form-control" id="Input3" placeholder="Masukkan Tgl Lahir">
+    <input type="text" class="form-control" id="Input3" name="tgl" placeholder="Tgl Lahir" required>
   </div>
-  <button type="button" id="btnForm" class="btn btn-primary">SAVE</button>
+  <div class="form-group">
+    <label for="Input4">Password</label>
+    <input type="password" class="form-control" id="Input4" name="pass" placeholder="Password" required>
+  </div>
+  <div class="form-group">
+    <label for="Input5">Confirm Password</label>
+    <input type="password" class="form-control" id="Input5" name="cfmpass" placeholder="Confirm Password" required>
+  </div>
+  <button type="submit" id="btnForm" class="btn btn-primary">SAVE</button>
 </form>
 </div>
 
 </div>
-
 <script src="jquery-3.3.1.min.js"></script>
 <script src="script.js"></script>
 </body>
